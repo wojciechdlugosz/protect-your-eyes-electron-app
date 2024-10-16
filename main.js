@@ -4,15 +4,16 @@ const path = require('path');
 const { app, BrowserWindow } = require('electron');
 
 function main() {
-
+  
   // create new window
   let mainWindow = new BrowserWindow({
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
     },
-    width: 800,
-    height: 600,
+    width: 520,
+    height: 650,
+    frame: false,
   })
 
   // load app/index.html as the window content
